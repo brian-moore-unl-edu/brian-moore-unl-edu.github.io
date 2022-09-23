@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>Mozart_40_mvt1</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#FFF;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=900" />
+	
+	
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" /> -->
+	
+	<script type="text/javascript">
+
+Number.prototype.toHHMMSS = function () {
+    sec_numb    = parseInt(this);
+    var hours   = Math.floor(sec_numb / 3600);
+    var minutes = Math.floor((sec_numb - (hours * 3600)) / 60);
+    var seconds = sec_numb - (hours * 3600) - (minutes * 60);
+
+    if (hours   < 10) {hours   = "0"+hours;}
+    if (minutes < 10) {minutes = "0"+minutes;}
+    if (seconds < 10) {seconds = "0"+seconds;}
+   // var time    = hours+':'+minutes+':'+seconds;
+   var time = minutes+':'+seconds;
+    return time;
+}
+</script>
+
+<script type="text/javascript">
+ function myTimer() {
+
+var tempSeconds = Math.round(gMusic.currentTime*100)/100;
+          document.getElementById('currentTime').innerHTML=' ' + tempSeconds.toHHMMSS() + ' ';
+         //document.getElementById('currentTime').innerHTML=tempSeconds;
+        
+}
+</script>
+	
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="mozart40mvt1_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:900px;height:675px;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="Mozart_40_mvt1.hyperesources/mozart40mvt1_hype_generated_script.js?56479"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none" aria-hidden=true>
+
+		<div>Naxos Music LibraryCatalog Number OC559
+</div>
+		<div>Symphony No. 40in G minor, K. 550
+Wolfgang Amadeus MozartCompleted July 25, 1788 in Vienna</div>
+		<div>i</div>
+		<div>- Touch to Begin -</div>
+		<div>?</div>
+		<div></div>
+		<div>
+</div>
+		<div></div>
+		<div>0:0</div>
+		<div>Play</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
